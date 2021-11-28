@@ -191,7 +191,7 @@ h1.name {
 .cards {
     max-width: 1120px;
     display: block;
-    margin-top: 280px;
+    margin-top: 450px;
 }
 
 .card {
@@ -445,7 +445,7 @@ li .description {
     }
     .container {
         margin: 0px;
-        padding: 0 15px;
+        padding: 15px;
     }
     footer {
         margin-top: 2050px;
