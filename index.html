@@ -5,8 +5,28 @@
         <link rel="stylesheet" type="text/css" href="styles.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="UTF-8">
+        <link rel="icon" href="icon-light.png" id="light-scheme-icon">
+        <link rel="icon" href="icon-dark.png" id="dark-scheme-icon">
     </head>
     <body>
+        <script type="text/javascript">
+            lightSchemeIcon = document.querySelector('link#light-scheme-icon');
+            darkSchemeIcon = document.querySelector('link#dark-scheme-icon');
+
+            function onUpdate() {
+                if (matcher.matches) {
+                    lightSchemeIcon.remove();
+                    document.head.append(darkSchemeIcon);
+                } else {
+                    document.head.append(lightSchemeIcon);
+                    darkSchemeIcon.remove();
+                }
+            }
+
+            matcher = window.matchMedia('(prefers-color-scheme: dark)');
+            matcher.addListener(onUpdate);
+            onUpdate();
+        </script>
 
         <div class="container">
             <div class="hero">
