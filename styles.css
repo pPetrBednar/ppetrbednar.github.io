@@ -21,8 +21,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
     margin: 0;
@@ -33,7 +33,7 @@ time, mark, audio, video {
     vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
     display: block;
 }
@@ -95,7 +95,7 @@ div , footer {
 }
 
 .hero {
-    margin: 50px auto; 
+    margin: 50px auto;
     position: relative;
 }
 
@@ -208,10 +208,9 @@ h1.name {
 
 .card-active , .card:hover{
     transform: scale(1.02);
-    transition: 0.5s;
+    transition: 0.2s;
     background-color: #fff;
     box-shadow: 0px 5px 50px -8px #ddd;
-    cursor: pointer;
 }
 
 
@@ -258,6 +257,15 @@ h1.name {
     font-size: 16px;
 }
 
+.skill-meta span a {
+    color: #81899C;
+    cursor: pointer;
+}
+
+.skill-meta span a:hover {
+    color: #0075ff;
+}
+
 /* Achievements ends */
 
 
@@ -271,7 +279,6 @@ ol {
     margin: 100px 0;
     height: 2px;
     background: #EEF0F7;
-
 }
 ol::before,
 ol::after {
@@ -338,8 +345,8 @@ li .description {
 }
 .description::before {
     content: '';
-    width: 0; 
-    height: 0; 
+    width: 0;
+    height: 0;
     border-left: 5px solid transparent;
     border-right: 5px solid transparent;
     border-bottom: 5px solid #f4f4f4;
